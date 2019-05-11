@@ -1,4 +1,4 @@
-# nas_shares_info
+# nas_shares_info.sh
 Bash script for PRTG by Paessler to monitor shares on a Synology NAS
 
 Place the script to /var/prtg/scriptsxml on your Synology NAS.
@@ -14,3 +14,7 @@ First the volume where the shares are located you want to monitor: e.g. VOLUME=v
 Second the share(s) to monitor: e.g. SHARES=(Share1 Share2 Share3)
 
 For each share the sensor will at least one channel. If you have activated the Recycle Bin for a share also a channel for this Recycle Bin will be created.
+
+Based on how many shares and how big your shares are choose working timeouts and scanning interval for your sensor.
+
+I use in this script custom units which show the share use in giga bytes. I wanted to use standard units from the custom sensor but I can't got it running to show correct values.
