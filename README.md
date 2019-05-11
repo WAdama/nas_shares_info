@@ -16,7 +16,7 @@ Place the script to /var/prtg/scriptsxml on your Synology NAS and make it execut
 
 ```
 wget https://raw.githubusercontent.com/WAdama/nas_shares_info/master/nas_shares_info.sh
-chmod +x ns_shares_info.sh
+chmod +x nas_shares_info.sh
 ```
 
 In PRTG create under your device which represents your Synology a SSH custom advanced senor. 
