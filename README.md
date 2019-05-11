@@ -25,13 +25,13 @@ Choose under "Script" this script and enter under "Parameters" the path and name
 
 ![Screenshot1](https://github.com/WAdama/nas_shares_info/blob/master/images/nas_shares_info.png)
 
-The configuration file contains two entries:
+The configuration file must contain two entries:
 
 ```
 VOLUME=volume1 #Volume where the shares are located
 SHARES=(Share1 Share2 Share3) #The share(s) to monitor
 ```
-For each share the sensor will at least one channel. If you have activated the Recycle Bin for a share also a channel for this Recycle Bin will be created.
+For each share the script will at least create one channel. If you have activated the Recycle Bin for a share also a channel for this Recycle Bin will be created.
 
 Based on how many shares and how big your shares are choose working timeouts and scanning interval for your sensor.
 
