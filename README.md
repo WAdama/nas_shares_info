@@ -1,13 +1,22 @@
 # nas_shares_info.sh
+
 Bash script for PRTG by Paessler to monitor shares on a Synology NAS
 
-Place the script to /var/prtg/scriptsxml on your Synology NAS.
+### Prerequisites
 
-In PRTG create under your device which represents your Synology a SSH custom advanced senor. Be sure you have set correct logon values for SSH in your device.
+Be sure you have set correct logon values for SSH in your device.
 
 I personally use "Login via private key" with special user for monitoring which also may use sudo without a password.
 
+### Installing
+
+Place the script to /var/prtg/scriptsxml on your Synology NAS.
+
+In PRTG create under your device which represents your Synology a SSH custom advanced senor. 
+
 Choose under "Script" this script and enter under "Parameters" the path and name to your configuration file.
+
+![Screenshot1](https://github.com/WAdama/nas_shares_info/blob/master/images/nas_shares_info.png)
 
 The configuration file contains two entries:
 
