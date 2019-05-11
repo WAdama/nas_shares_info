@@ -1,4 +1,5 @@
 #!/bin/bash
+# Version 1.0
 
 CONF=$1
 TOTAL=0
