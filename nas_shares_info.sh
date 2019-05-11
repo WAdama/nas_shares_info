@@ -1,5 +1,6 @@
 #!/bin/bash
 # Version 1.0
+#Be sure you have valid SSH credentials in your device
 
 CONF=$1
 TOTAL=0
