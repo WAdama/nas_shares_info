@@ -14,10 +14,10 @@ I personally use "Login via private key" with an user especially for monitoring 
 
 Place the script to /var/prtg/scriptsxml on your Synology NAS and make it executable.
 
-...
+```
 wget https://raw.githubusercontent.com/WAdama/nas_shares_info/master/nas_shares_info.sh
 chmod +x ns_shares_info.sh
-...
+```
 
 In PRTG create under your device which represents your Synology a SSH custom advanced senor. 
 
