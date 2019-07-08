@@ -43,4 +43,6 @@ Based on how many shares and how big your shares are choose working timeouts and
 
 I use in this script custom units which show the share use in giga bytes. I wanted to use standard units from the custom sensor but I can't got it running to show correct values.
 
+The version for BTRFS uses the standard units from PRTG.
+
 ![Screenshot1](https://github.com/WAdama/nas_shares_info/blob/master/images/nas_shares_info_sensor.png)
