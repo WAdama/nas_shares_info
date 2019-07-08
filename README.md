@@ -2,6 +2,8 @@
 
 Bash script for PRTG by Paessler to monitor shares on a Synology NAS
 
+nas_shares_info_b.sh is a version especially for BTRFS file system which uses the btrfs filesystem du command.
+
 ### Prerequisites
 
 Be sure you have set correct logon values for SSH in your device.
@@ -18,6 +20,8 @@ Place the script to /var/prtg/scriptsxml on your Synology NAS and make it execut
 
 ```
 wget https://raw.githubusercontent.com/WAdama/nas_shares_info/master/nas_shares_info.sh
+or
+wget https://raw.githubusercontent.com/WAdama/nas_shares_info/master/nas_shares_info_b.sh
 chmod +x nas_shares_info.sh
 ```
 
