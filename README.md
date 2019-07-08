@@ -2,7 +2,7 @@
 
 Bash script for PRTG by Paessler to monitor shares on a Synology NAS
 
-nas_shares_info_b.sh is a version especially for BTRFS file system which uses the btrfs filesystem du command.
+nas_shares_info_b.sh is a version especially for BTRFS file system which uses the **btrfs filesystem du** command.
 
 ### Prerequisites
 
