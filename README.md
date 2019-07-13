@@ -45,6 +45,6 @@ I use in this script custom units which show the share use in giga bytes. I want
 
 The version for BTRFS uses the standard units from PRTG.
 
-**HINT:** Beware of that the btrfs command run much longer than the standard du. So if you have quite large shares together in one sensor it may reach a timeout in PRTG.
+**HINT:** Beware of that the btrfs command runs much longer than the standard du. So if you have quite large shares together in one sensor it may reach a timeout in PRTG.
 
 ![Screenshot1](https://github.com/WAdama/nas_shares_info/blob/master/images/nas_shares_info_sensor.png)
