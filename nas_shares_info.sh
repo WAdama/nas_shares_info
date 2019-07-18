@@ -21,3 +21,4 @@ fi
 done
 echo "<result><channel>Total</channel><value>$((TOTAL*1024))</value><unit>BytesDisk</unit><VolumeSize>GigaByte</VolumeSize></result></prtg>"
 exit
+
