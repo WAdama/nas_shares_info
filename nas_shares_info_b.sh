@@ -10,7 +10,7 @@ do
 REC="/$VOLUME/$SHARE/""#recycle/"
 IFS=" " read USED EXCLUSIVE SHARED VOLNAME <<< `btrfs filesystem du -s --raw /$VOLUME/$SHARE/ | tail -1`
 TOTAL=$((TOTAL + USED))
-echo "<result><channel>Volume $SHARE: In Use</channel><value>$USED</value><unit>BytesDisk</unit><float>0</float></result>"
+echo "<result><channel>Share $SHARE: In Use</channel><value>$USED</value><unit>BytesDisk</unit><float>0</float></result>"
 if [ -d $REC ]
   then
 	IFS=" " read RECY EXCLUSIVE SHARED RECNAME <<< `btrfs filesystem du -s --raw $REC | tail -1`
