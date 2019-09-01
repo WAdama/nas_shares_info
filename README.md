@@ -43,4 +43,4 @@ Based on how many shares and how big your shares are choose working timeouts and
 
 **HINT:** Beware of that the btrfs command runs much longer than the standard du. So if you have quite large shares together in one sensor it may reach a timeout in PRTG.
 
-![Screenshot1](https://github.com/WAdama/nas_shares_info/blob/master/images/nas_shares_info_sensor.png)
+![Screenshot1](https://github.com/WAdama/nas_shares_info/blob/master/images/nas_shares_info_sensor2.png)
