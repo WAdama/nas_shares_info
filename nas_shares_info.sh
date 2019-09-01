@@ -1,5 +1,5 @@
 #!/bin/bash
-# Version 1.0.2
+# Version 1.0.3
 #Be sure you have valid SSH credentials in your device
 
 CONF=$1
@@ -16,7 +16,7 @@ echo "<result><channel>Volume $SHARE: In Use</channel><value>$USED</value><unit>
 if [ -d $REC ]
   then
 	IFS=" " read RECY RECNAME <<< `du -s -b $REC`
-	echo "<result><channel>Volume $SHARE: Recyclable</channel><value>$RECY</value><unit>BytesDisk</unit><VolumeSize>GigaByte</VolumeSize></result>"
+	echo "<result><channel>Share $SHARE: Recyclable</channel><value>$RECY</value><unit>BytesDisk</unit><VolumeSize>GigaByte</VolumeSize></result>"
 fi
 done
 echo "<result><channel>Total</channel><value>$((TOTAL*1024))</value><unit>BytesDisk</unit><VolumeSize>GigaByte</VolumeSize></result></prtg>"
