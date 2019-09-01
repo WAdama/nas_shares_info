@@ -1,4 +1,5 @@
 #!/bin/bash
+#Version 1.0.1
 
 CONF=$1
 TOTAL=0
@@ -13,7 +14,7 @@ echo "<result><channel>Volume $SHARE: In Use</channel><value>$USED</value><unit>
 if [ -d $REC ]
   then
 	IFS=" " read RECY EXCLUSIVE SHARED RECNAME <<< `btrfs filesystem du -s --raw $REC | tail -1`
-	echo "<result><channel>Volume $SHARE: Recyclable</channel><value>$RECY</value><unit>BytesDisk</unit><float>0</float></result>"
+	echo "<result><channel>Share $SHARE: Recyclable</channel><value>$RECY</value><unit>BytesDisk</unit><float>0</float></result>"
 fi
 done
 
