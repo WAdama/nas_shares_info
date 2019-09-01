@@ -12,7 +12,7 @@ REC="/$VOLUME/$SHARE/""#recycle/"
 SNAP="/$VOLUME/@sharesnap/$SHARE"
 IFS=" " read USED VOLNAME <<< `du -s -b /$VOLUME/$SHARE/`
 TOTAL=$((TOTAL + USED))
-echo "<result><channel>Volume $SHARE: In Use</channel><value>$USED</value><unit>BytesDisk</unit><VolumeSize>GigaByte</VolumeSize></result>"
+echo "<result><channel>Share $SHARE: In Use</channel><value>$USED</value><unit>BytesDisk</unit><VolumeSize>GigaByte</VolumeSize></result>"
 if [ -d $REC ]
   then
 	IFS=" " read RECY RECNAME <<< `du -s -b $REC`
