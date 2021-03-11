@@ -10,7 +10,7 @@ Be sure you have set correct logon values for SSH in your device.
 
 I personally use "Login via private key" with an user especially for monitoring which also may use sudo for this script without a password.
 
-![Screenshot1](https://github.com/WAdama/nas_shares_info/blob/master/images/ssh_settings.png)
+![Screenshot1](./images/ssh_settings.png)
 
 **HINT:** Since DSM 6.2.2 for SSH access the user has to be member of the local Administrators group on your Synology NAS.
 
@@ -29,7 +29,7 @@ In PRTG create under your device which represents your Synology a SSH custom adv
 
 Choose under "Script" this script and enter under "Parameters" the path and name to your configuration file.
 
-![Screenshot1](https://github.com/WAdama/nas_shares_info/blob/master/images/nas_shares_info.png)
+![Screenshot1](./images/nas_shares_info.png)
 
 The configuration file must contain two entries:
 
@@ -43,4 +43,4 @@ Based on how many shares and how big your shares are choose working timeouts and
 
 **HINT:** Beware of that the btrfs command runs much longer than the standard du. So if you have quite large shares together in one sensor it may reach a timeout in PRTG.
 
-![Screenshot1](https://github.com/WAdama/nas_shares_info/blob/master/images/nas_shares_info_sensor2.PNG)
+![Screenshot1](./images/nas_shares_info_sensor2.PNG)
