@@ -4,6 +4,10 @@ Bash script for PRTG by Paessler to monitor shares on a Synology NAS
 
 nas_shares_info_b.sh is a version especially for BTRFS file system which uses the **btrfs filesystem du** command.
 
+Sensor has to be created in PRTG on your Synology device.
+
+Sensor tested on DS 918+ with DSM 6.2.4-25556
+
 ### Prerequisites
 
 Be sure you have set correct logon values for SSH in your device.
