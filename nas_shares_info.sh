@@ -1,5 +1,5 @@
 #!/bin/bash
-# Version 1.0.3
+# Version 1.0.4
 #Be sure you have valid SSH credentials in your device
 
 CONF=$1
@@ -10,12 +10,12 @@ for SHARE in "${SHARES[@]}"
 do
 REC="/$VOLUME/$SHARE/""#recycle/"
 SNAP="/$VOLUME/@sharesnap/$SHARE"
-IFS=" " read USED VOLNAME <<< `du -s -b /$VOLUME/$SHARE/`
+IFS=" " read USED VOLNAME <<< $(du -s -b /$VOLUME/$SHARE/)
 TOTAL=$((TOTAL + USED))
 echo "<result><channel>Share $SHARE: In Use</channel><value>$USED</value><unit>BytesDisk</unit><VolumeSize>GigaByte</VolumeSize></result>"
 if [ -d $REC ]
   then
-	IFS=" " read RECY RECNAME <<< `du -s -b $REC`
+	IFS=" " read RECY RECNAME <<< $(du -s -b $REC)
 	echo "<result><channel>Share $SHARE: Recyclable</channel><value>$RECY</value><unit>BytesDisk</unit><VolumeSize>GigaByte</VolumeSize></result>"
 fi
 done
