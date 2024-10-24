@@ -8,6 +8,8 @@ Sensor has to be created in PRTG on your Synology device.
 
 Sensor tested on DS 918+ with DSM 6.2.4-25556 and 7.0-41890
 
+**Note:** As "source" can be misused in bash scripts, I have changed the conf file to JSON format. If you want to update to the new script, pause your sensor(s), change to the new script and recreate your conf files in JSON format with the same shares to be monitored. Then just resume the sensor(s).
+
 ### Prerequisites
 
 Be sure you have set correct logon values for SSH in your device.
@@ -35,11 +37,17 @@ Choose under "Script" this script and enter under "Parameters" the path and name
 
 ![Screenshot1](./images/nas_shares_info.png)
 
-The configuration file must contain two entries:
+The configuration file must contain entries for volume and shares in JSON format:
 
 ```
-VOLUME=volume1 #Volume where the shares are located
-SHARES=(Share1 Share2 Share3) #The share(s) to monitor
+{
+  "VOLUME": "volume1",
+  "SHARES": [
+    "Share1",
+    "Share2",
+    "Share3"
+  ]
+}
 ```
 For each share the script will at least create one channel. If you have activated the Recycle Bin for a share also a channel for this Recycle Bin will be created.
 
