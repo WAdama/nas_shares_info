@@ -1,5 +1,5 @@
 #!/bin/bash
-#Version 1.0.5
+#Version 1.0.6
 declare -a SHARES
 TOTAL=0
 while IFS="|" read -r key value; do
